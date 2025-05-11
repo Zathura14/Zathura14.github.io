@@ -1,9 +1,64 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
 body {
+  margin: 0px;
+  height: 100%;
   background-color: powderblue;
 }
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
 h1 {
   color: red;
 }
 p {
   color: red;
+}
+
+
+.box {
+  width: 138px;
+  height: 66px;
+}
+
+.box .group {
+  position: fixed;
+  width: 140px;
+  height: 66px;
+  top: 0;
+  left: 0;
+}
+
+.box .overlap-group {
+  position: relative;
+  width: 138px;
+  height: 66px;
+  background-color: #1d7ba3;
+  border-radius: 90px;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.box .text-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  font-family: "Itim-Regular", Helvetica;
+  font-weight: 400;
+  color: #00ff90;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
 }
