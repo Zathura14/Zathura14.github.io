@@ -35,8 +35,8 @@ p {
   position: fixed;
   width: 140px;
   height: 66px;
-  top: 0;
-  left: 0;
+  top: 100;
+  left: 100;
 }
 
 .box .overlap-group {
